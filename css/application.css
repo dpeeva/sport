@@ -1,6 +1,6 @@
 ﻿
 html , body                         { margin:0; padding:0;}
-body                                { background: url(../images/body.jpg) no-repeat  center top; font: normal 12px Arial; color:#6b6b6b;  }
+body                                { background: url(../images/body.jpg) no-repeat  center top; font: normal 13px Arial; color:#6b6b6b;  }
 hr, .clear                          { clear:both; margin:0; padding:0; height:0px; width:0px; line-height:0px; font-size:0px; overflow:hidden; display:block; border:0; background:none;}   
 a                                   { margin:0; padding:0; text-decoration:none; outline:none; color:#04769B; }
 a:hover                             { text-decoration:underline;}
@@ -50,10 +50,73 @@ header form input{
     background: #fff;
 }
 
+ul#main_menu{
+	clear: both;
+	margin: 0 auto;
+	width: 981px;
+	min-height: 45px;
+	background: url(../images/main_menu_bg.jpg) repeat-x #fff;
+	list-style-type: none;
+}
 
+ul#main_menu > li{
+	position: relative;
+	padding-right: 17px;
+	background: url(../images/main_menu_corner.png) no-repeat right -87px;
+}
 
+ul#main_menu > li, #main_menu > li > a{
+	float: left;
+}
 
+#main_menu > li > a, #main_menu > li > a > span{
+	display: block;
+	line-height: 40px;
+}
 
+ul#main_menu > li > a{
+	padding-left: 17px;
+	overflow: hidden;
+	text-decoration: none;
+	font: bold 13px Arial;
+	color: #9d9d9d;
+	background: url(../images/menu_tab_first.png) no-repeat 0px -87px;
+}
+
+ul#main_menu  > li  > a.selected , #main_menu > li > a:hover {
+	background: url(../images/menu_tab_first.png) no-repeat left 0px;
+	color: #000;
+}
+
+ul#main_menu li > a > span.home_icon{
+	background: url(../images/icons.png) no-repeat left -30px;
+	padding-left: 25px;
+}
+ul#main_menu > li > a.selected span.home_icon, #main_menu > li  > a:hover span.home_icon{
+	background: url(../images/icons.png) no-repeat left 10px;
+	padding-left: 25px;
+}
+ul#main_menu > li > ol{
+	display: none;
+	position: absolute;
+	left: 0;
+	top:100%;
+	list-style-type: none;
+	background-color: #fff;
+	color: #000; 
+}
+ul#main_menu li:hover > ol {
+	display: block;
+}
+
+ul#main_menu li ol li, #nav li ol li a {
+	float: none;
+}
+
+ul#main_menu li ol li a {
+	width: 150px;
+	display: block;
+}
 
 
 
