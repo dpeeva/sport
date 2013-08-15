@@ -146,13 +146,8 @@ header > nav > ul li ol li, #nav li ol li a {
 	float: none;
 }
 
-<<<<<<< HEAD
-ul#main_menu li ol li a {
-	width: 200px;
-=======
 header > nav > ul li ol li a {
-	width: 150px;
->>>>>>> cb2511cff5fdd286d766db20f0b8e09494b1b642
+	width: 200px;
 	display: block;
 }
 
