@@ -102,83 +102,83 @@ header > nav > ul > li > a{
 
 header > nav > ul > li > a,
 header > nav > ul > li > a > span{
-	display: block;
-	line-height: 40px;
-	padding: 0px 2px;
+  display: block;
+  line-height: 40px;
+  padding: 0px 2px;
 }
 
 header > nav > ul > li > a{
-	padding-left: 17px;
-    padding-top: 4px;
-	overflow: hidden;
-	text-decoration: none;
-	font: bold 13px Arial;
-	color: #9d9d9d;
-	background: url(../images/menu_tab_first.png) no-repeat 0px -87px;
+  padding-left: 17px;
+  padding-top: 4px;
+  overflow: hidden;
+  text-decoration: none;
+  font: bold 13px Arial;
+  color: #9d9d9d;
+  background: url(../images/menu_tab_first.png) no-repeat 0px -87px;
 }
 
 header > nav > ul  > li  > a.selected, 
 header > nav > ul > li > a:hover {
-    text-decoration: none;
-	background: url(../images/menu_tab_first.png) no-repeat left 0px;
-	color: #000;
+  text-decoration: none;
+  background: url(../images/menu_tab_first.png) no-repeat left 0px;
+  color: #000;
 }
 
 header > nav > ul li > a > .home_icon{
-	background: url(../images/icons.png) no-repeat left -30px;
-	padding-left: 25px;
+  background: url(../images/icons.png) no-repeat left -30px;
+  padding-left: 25px;
 }
 header > nav > ul > li > a.selected .home_icon,
 header > nav > ul > li  > a:hover .home_icon{
-	background: url(../images/icons.png) no-repeat left 10px;
-	padding-left: 25px;
+  background: url(../images/icons.png) no-repeat left 10px;
+  padding-left: 25px;
 }
 
 li.dropmenu:hover span{ 
-	background: #101010;
-	border-radius: 7px;
-    color: #fff;
+  background: #101010;
+  border-radius: 7px;
+  color: #fff;
 }
 
 header > nav > ul > li > ol{
-	display: none;
-	position: absolute;
-	left: 17px;
-	top: 33px;
-	list-style-type: none;	
+  display: none;
+  position: absolute;
+  left: 17px;
+  top: 33px;
+  list-style-type: none;	
 }
 
 header > nav > ul > li:hover > ol {
-	display: block;
-	width: 160px;
-	background-color: #fff;
-	border: 10px solid #101010;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+  display: block;
+  width: 160px;
+  background-color: #fff;
+  border: 10px solid #101010;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 header > nav > ul > li > ol > li,
 header nav > ul > li > ol > li > a {
-    float: none; 
-    display: block;
-    color: #000;
+  float: none; 
+  display: block;
+  color: #000;
 }
 
 header > nav > ul > li > ol > li{
-	margin: 0 auto;
-    padding: 10px 0px;
-	width: 140px;
-    background-color: #fff;	
-    border-bottom: 1px solid #e5e5e5;
+  margin: 0 auto;
+  padding: 10px 0px;
+  width: 140px;
+  background-color: #fff;	
+  border-bottom: 1px solid #e5e5e5;
 }
 
 header > nav > ul > li > ol > li:last-child{
-    border-bottom: none;
+  border-bottom: none;
 }
 
 header > nav > ul > li > ol > li > a:hover{
-    text-decoration: none;
-    color: #ab0066; 
+  text-decoration: none;
+  color: #ab0066; 
 }
 
 
