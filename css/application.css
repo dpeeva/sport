@@ -1,4 +1,3 @@
-﻿
 html , body                         { margin:0; padding:0;}
 body                                { background: url(../images/body.jpg) no-repeat  center top; font: normal 12px Arial; color:#6b6b6b;  }
 hr, .clear                          { clear:both; margin:0; padding:0; height:0px; width:0px; line-height:0px; font-size:0px; overflow:hidden; display:block; border:0; background:none;}   
@@ -96,7 +95,7 @@ header > nav > ul > li{
 
 header > nav > ul > li, 
 header > nav > ul > li > a{
-	float: left;
+  float: left;
 }
 
 header > nav > ul > li > a,
@@ -144,7 +143,7 @@ header > nav > ul > li > ol{
   position: absolute;
   left: 17px;
   top: 33px;
-  list-style-type: none;	
+  list-style-type: none;  
 }
 
 header > nav > ul > li:hover > ol {
@@ -167,7 +166,7 @@ header > nav > ul > li > ol > li{
   margin: 0 auto;
   padding: 10px 0px;
   width: 140px;
-  background-color: #fff;	
+  background-color: #fff; 
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -325,3 +324,43 @@ header > nav > ul > li > ol > li > a:hover{
   border: solid 1px #dadada;
 }
 
+
+footer{
+  margin: 0 auto;
+  padding: 35px 0px 0px 20px;
+  width: 982px;
+  height: 200px;
+  background: #000;
+}
+
+footer > ul{
+  float: left;
+  display: block;
+  margin-right: 12px;
+  padding-right: 41px;
+  list-style-type: none;
+  border-right: 1px solid #151515;
+}
+
+footer > ul.last{
+  margin-right: 0px;
+  padding-right: 0px;
+  border: none;
+}
+
+footer > ul  li:first-child{
+  padding-bottom: 14px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+footer > ul  a{
+  color: #888888;
+  font-size: 11px ;
+  line-height: 20px;
+}
+
+footer > ul a:hover{
+  color: #fff;
+  text-decoration: none;
+}
