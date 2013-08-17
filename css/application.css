@@ -282,4 +282,14 @@ header > nav > ul li ol li a {
   height: 311px;
   background: #ccc;
 }
+#last_news ul article{
+  width: 206px;
+
+}
+
+#last_news ul article img{
+  display: block;
+  padding: 5px;
+  border: solid 1px #dadada;
+}
 
