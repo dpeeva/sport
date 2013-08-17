@@ -293,7 +293,7 @@ header > nav > ul > li > ol > li > a:hover{
   background: #ffffff;
 }
 
-#last_news  div{
+#last_news div{
   position: relative;
   height: 311px;
   border:solid 1px #e5e5e5;
@@ -301,7 +301,7 @@ header > nav > ul > li > ol > li > a:hover{
   overflow: hidden;
 }
 
-#last_news  ul{
+#last_news ul{
   position: absolute; left:0; top:0;
   padding: 0;
   height: 311px;
