@@ -1,5 +1,5 @@
 html , body                         { margin:0; padding:0;}
-body                                { background: url(../images/body.jpg) no-repeat  center top; font: normal 12px Arial; color:#6b6b6b;  }
+body                                { background: #333 url(../images/body.jpg) no-repeat  center top; font: normal 12px Arial; color:#6b6b6b;  }
 hr, .clear                          { clear:both; margin:0; padding:0; height:0px; width:0px; line-height:0px; font-size:0px; overflow:hidden; display:block; border:0; background:none;}   
 a                                   { margin:0; padding:0; text-decoration:none; outline:none; color:#04769B; }
 a:hover                             { text-decoration:underline;}
@@ -186,6 +186,8 @@ header > nav > ul > li > ol > li > a:hover{
   padding: 0 18px 20px 18px;
   width: 964px;
   clear: both;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   background: #fff;
 }
 
@@ -218,15 +220,21 @@ header > nav > ul > li > ol > li > a:hover{
   background: #000000; 
 }
 #text_carousel > ul{
-  position: absolute; left: 110px; top: 0px;
+  position: absolute; left: 110px; top: 0;
   padding: 0;
   width: 820px;
   list-style-type: none;
 }
-#text_carousel > ul li{
+#text_carousel > ul li {
+  position: absolute; left:0; top:0;
   padding: 0;
   height: 32px;
+  overflow: hidden;
   line-height: 33px;
+}
+#text_carousel > ul li + li {
+  top:32px;
+  opacity: 0;
 }
 #text_carousel > ul a{
   color: #000;
@@ -303,19 +311,24 @@ header > nav > ul > li > ol > li > a:hover{
 #last_news ul{
   position: absolute; left:0; top:0;
   padding: 0;
+  width: 9999px;
   height: 311px;
   list-style-type: none;
 }
 
 #last_news ul li{
-  padding: 0;
-  width: 965px;
-  height: 311px;
-  background: #ccc;
+  padding: 30px 0 0 30px;
+  width: 935px;
+  height: 281px;
+  float: left;
+  /*background: #ccc;*/
 }
 #last_news ul article{
+  margin: 0 25px 0 0;
   width: 206px;
-
+  float: left;
+  color: #666666;
+  line-height: 18px;
 }
 
 #last_news ul article img{
@@ -324,13 +337,159 @@ header > nav > ul > li > ol > li > a:hover{
   border: solid 1px #dadada;
 }
 
+#last_news ul article figcaption{
+  padding: 10px 0;
+}
+
+#last_news ul article figcaption a{
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#last_news ul article figcaption a:hover{
+  color: #ac0000;
+}
+#last_news ul article > a{
+  margin-top:10px;
+  display: block;
+  color: #0e0e0e;
+}
+
+#options{
+  padding: 30px 0 0 0;
+  overflow: hidden;
+}
+
+#options article{
+  position: relative;
+  margin: 0;
+  width: 216px;
+  height: 365px;
+  float: left;
+  border: solid 4px #e5e5e5;
+  background: #fafafa;
+}
+#options article + article{
+  margin-left: 22px;
+}
+#options article ul{
+  margin: 0 auto;
+  padding: 0;
+  width: 185px;
+  height: 280px;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+#options article li{
+  padding: 0  0 3px 0;
+}
+
+#options article > h4{
+  margin: 0 0 23px 0;
+  height: 38px;
+  color: #333333;
+  text-indent: 25px;
+  line-height: 38px;
+  font-weight: bold;
+  background: #fff;
+}
+
+#options article > h5{
+  position: absolute; top:8px; right: 8px; z-index: 20;
+  width: 41px;
+  height: 25px;
+  text-indent: -9999px;
+  background: url(../images/badges.png) no-repeat 0 0 ;
+}
+
+#options article > h5.hot{background-position: 0 -25px; }
+
+#options figure img{
+  padding: 5px;
+  display: block;
+  width: 170px;
+  border: solid 1px #dadada;
+}
+
+#options figure > a:hover img{
+  background: #e8e8e8;
+}
+
+#options figcaption a{
+  display: block;
+  padding: 12px 0;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#options figcaption a:hover{
+  color: #ac0000;
+}
+
+#options article {
+  line-height: 18px;
+}
+
+#options article li >a{
+  margin-top: 10px;
+  display: block;
+  width: 80px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff ;
+  border: 1px solid #a10101;
+  border-radius: 4px;
+  background: #cb0b0b; /* Old browsers */
+  background: -moz-linear-gradient(top,  #cb0b0b 0%, #ad0000 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cb0b0b), color-stop(100%,#ad0000)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #cb0b0b 0%,#ad0000 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #cb0b0b 0%,#ad0000 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #cb0b0b 0%,#ad0000 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #cb0b0b 0%,#ad0000 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb0b0b', endColorstr='#ad0000',GradientType=0 ); /* IE6-9 */
+}
+
+#options article li >a:hover{
+  background: #222222;
+  border-color: #000000;
+  text-decoration: none;
+}
+
+.bx-wrapper{ left:5px; }
+
+.bx-wrapper .bx-viewport {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border:0;
+  background: none;
+}
+
+
+.bx-wrapper .bx-controls-direction a{
+  margin: 0;
+  top:-53px;
+  right:6px;
+  height: 20px;
+  width: 20px;
+  background: url(../images/arrows.png) no-repeat 0 -22px;
+}
+.bx-wrapper .bx-controls-direction a:hover{ background-position: 0 -42px; }
+.bx-wrapper a.bx-prev{ left:auto; right:32px; background-position: 0 -62px; }
+.bx-wrapper a.bx-prev:hover{ background-position: 0 -82px; }
+
+
 
 footer{
   margin: 0 auto;
   padding: 35px 0px 0px 20px;
   width: 982px;
   height: 200px;
-  background: #000;
+  background: #333;
 }
 
 footer > ul{
@@ -339,7 +498,7 @@ footer > ul{
   margin-right: 12px;
   padding-right: 41px;
   list-style-type: none;
-  border-right: 1px solid #151515;
+  border-right: 1px solid #424242;
 }
 
 footer > ul.last{
