@@ -336,8 +336,8 @@ footer{
 footer > ul{
   float: left;
   display: block;
-  margin-right: 20px;
-  padding-right: 57px;
+  margin-right: 12px;
+  padding-right: 41px;
   list-style-type: none;
   border-right: 1px solid #151515;
 }
@@ -348,19 +348,19 @@ footer > ul.last{
   border: none;
 }
 
-footer > ul > li:first-child{
+footer > ul  li:first-child{
   padding-bottom: 14px;
   text-transform: uppercase;
   color: #fff;
 }
 
-footer > ul > li > a{
+footer > ul  a{
   color: #888888;
   font-size: 11px ;
   line-height: 20px;
 }
 
-footer > ul > li > a:hover{
+footer > ul a:hover{
   color: #fff;
   text-decoration: none;
 }
