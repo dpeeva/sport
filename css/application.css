@@ -82,7 +82,7 @@ header > nav > ol a.selected{
 
 header > nav > ul{
   padding:0 0 0 10px;
-  min-height: 45px;
+  min-height: 47px;
   background: url(../images/main_menu_bg.jpg) repeat-x #fff;
   list-style-type: none;
 }
