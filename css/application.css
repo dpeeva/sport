@@ -218,7 +218,7 @@ header > nav > ul > li > ol > li > a:hover{
 
 .floated{
   float:left;
-  margin-right: 18px;
+  margin-right: 19px;
 }
 
 .floated h3{
@@ -231,8 +231,9 @@ header > nav > ul > li > ol > li > a:hover{
 }
 
 ul#categories{
-  width: 203px;
   margin-bottom: 18px;
+  padding: 0;
+  width: 203px;
   list-style-type: none;
 }
 
@@ -366,7 +367,7 @@ ul#categories li a:hover{
 
 
 #latest_features{
-  margin:22px 0 0 0;
+  margin:22px 0 18px 0;
   height: 474px;
   border-radius:3px;
   background: #000;
@@ -381,6 +382,7 @@ ul#categories li a:hover{
 
 #last_news{
   padding: 18px 0 0 0;
+  clear:both;
   overflow: hidden;
 }
 
