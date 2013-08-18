@@ -185,8 +185,9 @@ header > nav > ul > li > ol > li > a:hover{
   margin: 0 auto;
   padding: 0 18px 20px 18px;
   width: 964px;
-  height: 700px;
-  clear: both;
+  overflow: hidden;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   background: #fff;
 }
 #breaking_news, ul#categories li,
@@ -258,6 +259,7 @@ ul#categories li a:hover{
   color: #666;
   line-height: 1.5em;
   font-size: 13px;
+  overflow: hidden;
   border: 2px dashed #e5e5e5;
 }
 
@@ -292,9 +294,9 @@ ul#categories li a:hover{
 }
 
 #play_review_content{
-   padding: 24px 18px 0px;
-   font-size: 11px;
-   line-height: 1.5em;
+  padding: 24px 18px 0px;
+  font-size: 11px;
+  line-height: 1.5em;
 }
 
 #play_review_content span{
@@ -318,7 +320,9 @@ ul#categories li a:hover{
 #play_review_content ul li p{
   padding: 0px;
 }
-
+.clear{
+  clear: both;
+}
 footer{
   clear: both;
   margin: 0 auto;
