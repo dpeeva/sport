@@ -19,8 +19,13 @@ $('#last_news ol li').click(function(){
 
 $('.bxslider ul').bxSlider({
   slideWidth: 185,
-  pager:false,
-  easing: 'ease'
+  pager:false
+});
+
+
+
+$('#breaking_news ul').bxSlider({
+  slideWidth: 385
 });
 
 

@@ -190,38 +190,107 @@ header > nav > ul > li > ol > li > a:hover{
   border-bottom-right-radius: 5px;
   background: #fff;
 }
-#breaking_news, ul#categories li,
+#breaking_news,
+#categories li,
 #play_review{
   border: 1px solid #e5e5e5;
 }
 
-#breaking_news, .floated h3, 
+#breaking_news, #categories h3, 
 #play_review, #play_review h3{
   border-top-right-radius:3px;
   border-top-left-radius:3px;
 }
 
 #breaking_news{
-  float: left;
   margin-right: 18px;
   width: 412px;
   height: 595px;
+  float: left;
+  background: #fafafa;
 }
 
 #breaking_news h3{
   padding: 0 18px;
   height: 38px;
-  font: bold 16px/38px Arial;
   color: #000;
+  font: bold 16px/38px Arial;
   border-bottom: 1px solid #e5e5e5;
+  background: #fff;
 }
 
-.floated{
+#breaking_news ul{
+  padding: 0;
+  list-style-type: none;
+}
+#breaking_news article{
+  margin: 0 auto;
+  padding: 23px 0 0 0;
+  width: 385px;
+  overflow: hidden;
+  line-height: 20px;
+  text-align: justify;
+}
+#breaking_news figure {
+  margin: 0 18px 0 0;
+  width: 132px;
+  min-height: 105px;
+  float: left;
+}
+#breaking_news figure img{
+  padding: 5px;
+  display: block;
+  width: 120px;
+  border: solid 1px #dadada;
+}
+
+#breaking_news figure a:hover img{
+  background: #e8e8e8;
+}
+
+#breaking_news ul h2 a {
+  padding: 2px 0 3px 0;
+  display: block;
+  font:bold 13px Arial;
+  text-align: left;
+  color: #000 ;
+}
+#breaking_news ul h2 a:hover,
+#breaking_news article > a:hover{
+  color: #AC0000;
+  text-decoration: none;
+}
+
+#breaking_news article > a{
+  padding-top:4px;
+  display: block;
+  font-size: 13px;
+  color: #000;
+}
+
+#breaking_news .bx-wrapper .bx-controls-direction a  {
+  top: -30px;
+}
+
+#breaking_news .bx-wrapper .bx-pager{
+  position: absolute; top: -45px; bottom: auto;
+  padding-right: 60px;
+  width: 325px;
+  text-align: right;
+}
+#breaking_news .bx-wrapper .bx-pager.bx-default-pager a{
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  text-align: left;
+}
+
+#categories{
   float:left;
   margin-right: 19px;
 }
 
-.floated h3{
+#categories h3{
   width: 167px;
   padding: 0 18px;
   height: 38px;
@@ -230,25 +299,25 @@ header > nav > ul > li > ol > li > a:hover{
   background: #000;
 }
 
-ul#categories{
+#categories ul{
   margin-bottom: 18px;
   padding: 0;
   width: 203px;
   list-style-type: none;
 }
 
-ul#categories li{
+#categories li{
   padding: 13px 0px 11px 36px;
   background: url(../images/arrow.png) no-repeat 15px 20px;
 }
 
-ul#categories li a{
+#categories li a{
   font-size: 10px;
   color: #000;
   text-transform: uppercase;
 }
 
-ul#categories li a:hover{
+#categories li a:hover{
   color:#ae0029;
   text-decoration: none;
 }
