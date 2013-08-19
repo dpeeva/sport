@@ -134,21 +134,27 @@ header > nav > ul > li  > a:hover .home_icon{
   padding-left: 25px;
 }
 
-li.dropmenu:hover span{ 
+li.submenu:hover span{ 
   background: #101010;
   border-radius: 7px;
   color: #fff;
 }
 
-header > nav > ul > li > ol{
+header > nav > ul > li > ol,
+header > nav li.subsubmenu > ol{
   display: none;
   position: absolute;
   left: 17px;
   top: 33px;
   list-style-type: none;	
 }
+header > nav li.subsubmenu > ol{
+  left: 138px;
+  top: 16px;
+}
 
-header > nav > ul > li:hover > ol {
+header > nav > ul > li:hover > ol,
+header > nav li.subsubmenu:hover > ol {
   display: block;
   width: 160px;
   background-color: #fff;
@@ -158,13 +164,16 @@ header > nav > ul > li:hover > ol {
 }
 
 header > nav > ul > li > ol > li,
-header nav > ul > li > ol > li > a {
+header nav > ul > li > ol > li > a,
+header > nav li.subsubmenu > ol > li,
+header > nav li.subsubmenu > ol > li > a {
   float: none; 
   display: block;
   color: #000;
 }
 
-header > nav > ul > li > ol > li{
+header > nav > ul > li > ol > li,
+header > nav li.subsubmenu > ol > li{
   margin: 0 auto;
   padding: 10px 0px;
   width: 140px;
@@ -172,11 +181,13 @@ header > nav > ul > li > ol > li{
   border-bottom: 1px solid #e5e5e5;
 }
 
-header > nav > ul > li > ol > li:last-child{
+header > nav > ul > li > ol > li:last-child,
+header > nav li.subsubmenu > ol > li:last-child{
   border-bottom: none;
 }
 
-header > nav > ul > li > ol > li > a:hover{
+header > nav > ul > li > ol > li > a:hover,
+header > nav li.subsubmenu > ol > li > a:hover{
   text-decoration: none;
   color: #ab0066; 
 }
