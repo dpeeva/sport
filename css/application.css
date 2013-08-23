@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 html , body                         { margin:0; padding:0;}
 body                                { background: #333 url(../images/body.jpg) no-repeat  center top; font: normal 12px Arial; color:#6b6b6b;  }
 hr, .clear                          { clear:both; margin:0; padding:0; height:0px; width:0px; line-height:0px; font-size:0px; overflow:hidden; display:block; border:0; background:none;}   
@@ -437,6 +436,7 @@ header > nav > ul > li > ol > li > a:hover{
 
 #latest_features{
   margin:22px 0 18px 0;
+  width: 638px;
   height: 474px;
   border-radius:3px;
   background: #000;
@@ -447,6 +447,105 @@ header > nav > ul > li > ol > li > a:hover{
   height: 38px;
   font: bold 16px/38px Arial;
   color: #fff;
+}
+
+
+#latest_features > ul {
+  position: relative;
+  padding:0;
+  width:100%;
+  height: 346px;
+  overflow: hidden;
+  list-style-type: none;
+}
+#latest_features > ul li{
+  position: absolute; left:0; top:0;
+  padding:0;
+  width: 100%;
+  height: 346px;
+}
+#latest_features > ul li + li{
+  display: none;
+}
+#latest_features > ul figcaption{
+  position: absolute; left:0; bottom:0; z-index: 5;
+  padding:12px 156px 0 17px;
+  width: 74%;
+  height: 88px;
+  color: #fff;
+  background: rgba(0,0,0, 0.6);
+
+}
+#latest_features > ul figcaption small{
+  margin:0;
+  padding:0;
+  display: block;
+  color: #ccc;
+  font-size: 10px;
+
+}
+
+#latest_features > ul figcaption h2{
+  padding:5px 0 5px 0;
+  font:bold 24px Arial;
+}
+#latest_features > ul figcaption > a{
+  position: absolute; right:34px; top:31px; z-index: 5;
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px;
+  background: url(../images/arrows_slider.png) no-repeat 0 0;
+}
+#latest_features > ul figcaption > a:hover{
+  background-position: left bottom;
+}
+
+#latest_features > ol{
+  padding:17px 0 0 8px;
+  width: 100%;
+  height: 73px;
+  overflow: hidden;
+  list-style-type: none;
+}
+#latest_features > ol li{
+  padding: 0;
+  float: left;
+
+}
+
+#latest_features > ol a{
+  padding: 4px 4px 0 15px ;
+  display: block;
+  width: 138px;
+  min-height: 51px;
+  float:left;
+  line-height: 17px;
+  font-weight: bold;
+  color: #949494;
+  
+  -webkit-transition: color .4s;
+  -moz-transition: colo§r .4s;
+  transition: color .4s;
+}
+
+#latest_features > ol li + li a {
+
+  border-left: solid 1px #262626;
+}
+
+#latest_features > ol a small{
+  display: block;
+  font-size: 10px;
+  font-weight: normal;
+}
+#latest_features > ol a:hover,
+#latest_features > ol li.selected a{
+  text-decoration: none;
+  color: #fff;
+}
+#latest_features > ol li.selected a{
+  cursor:default;
 }
 
 #last_news{
