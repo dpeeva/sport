@@ -137,17 +137,28 @@ li.dropmenu:hover span{
   border-radius: 7px;
   color: #fff;
 }
-
-header > nav > ul > li > ol{
-  display: none;
+header > nav > ul > li > ol,
+header > nav li.subsubmenu > ol{
+  display: block;
+  opacity: 0;
+  padding: 0;
   position: absolute;
   left: 17px;
   top: 33px;
-  list-style-type: none;  
+  list-style-type: none;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+header > nav li.subsubmenu > ol{
+  left: 138px;
+  top: 16px;
+  transition: all .4s;
 }
 
-header > nav > ul > li:hover > ol {
-  display: block;
+header > nav > ul > li:hover > ol,
+header > nav li.subsubmenu:hover > ol {
+  opacity: 1;
   width: 160px;
   background-color: #fff;
   border: 10px solid #101010;
@@ -156,13 +167,16 @@ header > nav > ul > li:hover > ol {
 }
 
 header > nav > ul > li > ol > li,
-header nav > ul > li > ol > li > a {
+header nav > ul > li > ol > li > a,
+header > nav li.subsubmenu > ol > li,
+header > nav li.subsubmenu > ol > li > a {
   float: none; 
   display: block;
   color: #000;
 }
 
-header > nav > ul > li > ol > li{
+header > nav > ul > li > ol > li,
+header > nav li.subsubmenu > ol > li{
   margin: 0 auto;
   padding: 10px 0px;
   width: 140px;
@@ -170,15 +184,17 @@ header > nav > ul > li > ol > li{
   border-bottom: 1px solid #e5e5e5;
 }
 
-header > nav > ul > li > ol > li:last-child{
+header > nav > ul > li > ol > li:last-child,
+header > nav li.subsubmenu > ol > li:last-child{
   border-bottom: none;
 }
 
-
-header > nav > ul > li > ol > li > a:hover{
+header > nav > ul > li > ol > li > a:hover,
+header > nav li.subsubmenu > ol > li > a:hover{
   text-decoration: none;
   color: #ab0066; 
 }
+
 
 #content{
   margin: 0 auto;
